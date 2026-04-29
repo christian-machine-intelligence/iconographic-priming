@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iconographic-priming"
+version = "0.1.0"
+description = "Multimodal extension of VirtueBench-2 §5.2: tests whether Christian sacred imagery produces moral-resilience effects analogous to psalm-text injection."
+requires-python = ">=3.10"
+authors = [{name = "Tim Hwang"}]
+
+dependencies = [
+    "anthropic>=0.40",
+    "openai>=1.50",
+    "pillow>=10.0",
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "pydantic>=2.0",
+    "tabulate>=0.9",
+    "python-dotenv>=1.0",
+    "tqdm>=4.66",
+    "virtue-bench",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

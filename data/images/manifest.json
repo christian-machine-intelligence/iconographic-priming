@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "preprocessing": {
+    "max_long_edge_px": 1568,
+    "format": "JPEG",
+    "quality": 92,
+    "strip_exif": true,
+    "color_mode": "RGB"
+  },
+  "images": [
+    {
+      "id": "sacred_07_fra_angelico_annunciation",
+      "category": "sacred",
+      "title": "Annunciation (San Marco)",
+      "artist": "Fra Angelico",
+      "year": 1440,
+      "wp_slug": "Annunciation_(Fra_Angelico,_San_Marco)",
+      "license": "PD-old-100",
+      "rationale": "Obedience, humility",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fra_Angelico_-_Annunciation.jpg/3840px-Fra_Angelico_-_Annunciation.jpg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Annunciation_(Fra_Angelico%2C_San_Marco)",
+      "file": "data/images/sacred/sacred_07_fra_angelico_annunciation.jpg",
+      "width": 1568,
+      "height": 1138,
+      "bytes": 620777,
+      "sha256": "919acbae95872eb3d1cebc74df8576c920cc56c3b09a3282912eedeb178ab5a5"
+    },
+    {
+      "id": "neutral_03_hokusai_great_wave",
+      "category": "neutral",
+      "title": "The Great Wave off Kanagawa",
+      "artist": "Hokusai",
+      "year": 1831,
+      "wp_slug": "The_Great_Wave_off_Kanagawa",
+      "license": "PD-old-100",
+      "rationale": "Ukiyo-e — non-Western parallel to Eastern icons",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/3840px-Tsunami_by_hokusai_19th_century.jpg",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa",
+      "file": "data/images/neutral/neutral_03_hokusai_great_wave.jpg",
+      "width": 1568,
+      "height": 1054,
+      "bytes": 668252,
+      "sha256": "87dbffa071cefbb763aa72cad2aa02d71d05d67f7c6e6dcbc31e574c40e086a9"
+    },
+    {
+      "id": "neutral_11_blank_gray",
+      "category": "neutral",
+      "title": "Blank Gray (control)",
+      "artist": "(programmatically generated)",
+      "year": 2026,
+      "wp_slug": null,
+      "license": "CC0 — generated for this study",
+      "rationale": "Maximally content-free control: 1568x1024 mid-gray with imperceptible noise. Tests whether the imagery effect requires any narrative content at all.",
+      "source_url": null,
+      "wikipedia_url": null,
+      "file": "data/images/neutral/neutral_11_blank_gray.jpg",
+      "width": 1568,
+      "height": 1024,
+      "bytes": 67247,
+      "sha256": "8cadab1384c144fe528d3c14f45d029cdcedf6991752b8a6f5def96b98da39fe"
+    }
+  ],
+  "note": "Paper bundle: only the three images referenced in PAPER.md are retained. See ../iconographic-priming-archive/images-bundle-full/ for the original 21-image bundle used in exploratory rotating-bundle experiments."
+}
