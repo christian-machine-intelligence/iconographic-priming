@@ -152,7 +152,7 @@ Table 2 places the *Annunciation* deltas on Opus 4.6 alongside the psalm-injecti
 | Courage    | 82.8% / 79.3% | 87.5% | +4.7  | 94.1% | +14.8 | 32% |
 | Temperance | 85.2% / 84.4% | 94.7% | +9.5  | 96.3% | +11.9 | 80% |
 
-Across the four virtues, the *Annunciation* alone — a single image attached to each user message — produces between 22% and 80% of the magnitude of psalm injection (which prepends ten full Psalms simultaneously into the system prompt). On temperance, the imagery effect is nearly four-fifths the size of the psalm effect; on prudence, it is roughly half. We discuss the protocol asymmetry (one image per call vs. ten psalms simultaneously) in §6 and in the critique companion. The point here is more cautious: even in this rougher form, sacred imagery on Opus 4.6 is doing real and substantial work, comparable in magnitude to the work scriptural text was doing in [ICMI-011](https://icmi-proceedings.com/ICMI-011-virtuebench-2.html).
+Across the four virtues, the *Annunciation* alone — a single image attached to each user message — produces between 22% and 80% of the magnitude of psalm injection (which prepends ten full Psalms simultaneously into the system prompt). On temperance, the imagery effect is nearly four-fifths the size of the psalm effect; on prudence, it is roughly half. We discuss the protocol asymmetry (one image per call vs. ten psalms simultaneously) in §6. The point here is more cautious: even in this rougher form, sacred imagery on Opus 4.6 is doing real and substantial work, comparable in magnitude to the work scriptural text was doing in [ICMI-011](https://icmi-proceedings.com/ICMI-011-virtuebench-2.html).
 
 ---
 

@@ -15,14 +15,13 @@ This repository contains the minimum code, data, and result records needed to re
 
 Plus a fourth text-only baseline condition (no image attached). Each cell is 150 base scenarios × 5 runs = 750 trials; the full study is 24,000 calls across two models, four virtues, four arms.
 
-The paper is in [PAPER.md](PAPER.md). A self-critique of the paper is in [PAPER_CRITIQUES.md](PAPER_CRITIQUES.md).
+The paper is in [PAPER.md](PAPER.md).
 
 ## Repo layout
 
 ```
 iconographic-priming/
 ├── PAPER.md                         The paper itself
-├── PAPER_CRITIQUES.md               Self-critique
 ├── README.md                        This file
 ├── pyproject.toml                   Python package metadata
 │
