@@ -107,7 +107,7 @@ Responses are scored using VirtueBench-2's `parse_answer` function, which extrac
 
 Table 1 reports accuracy per (model, virtue, arm) with 95% bootstrap confidence intervals (10,000 resamples). Bold cells are Bonferroni-significant Δ vs. baseline at corrected α = 0.05 across the 24-test family (3 image arms × 4 virtues × 2 models; tested by paired permutation, 10,000 sign-flip permutations paired by `(base_id, run_index)`). Figure 2 visualizes the same data; full per-cell p-values and Cohen's *h* effect sizes are reproducible from the included JSONL records via `analyze.py`.
 
-**Table 1: Per-arm accuracy with 95% bootstrap CI (n = 750 per cell). Bold = Bonferroni-significant Δ vs. baseline.**
+**Table 1: Per-arm accuracy. 750 calls per cell; 23,935 (99.7%) returned a parsable A/B answer and entered the analysis (per-cell valid n: median 750, range 727–750). Bold = Bonferroni-significant Δ vs. baseline (paired permutation test on common (base_id, run_index) keys; α/24 ≈ 0.0021).**
 
 *Claude Opus 4.6:*
 
@@ -127,9 +127,9 @@ Table 1 reports accuracy per (model, virtue, arm) with 95% bootstrap confidence 
 | Courage     | 68.7% [65.5, 71.9] | 68.4% [65.1, 71.7] | 64.7% [61.3, 68.1] | 69.7% [66.5, 72.9] |
 | Temperance  | 88.0% [85.6, 90.3] | 88.1% [85.7, 90.4] | 87.5% [85.1, 89.7] | 89.3% [87.1, 91.5] |
 
-![**Figure 2.** Per-arm accuracy across all four conditions, both models, four cardinal virtues. Error bars are 95% bootstrap CIs. On Opus 4.6 (top row), the four-arm gradient is visible especially on temperance (85.2 → 86.7 → 88.8 → 94.7) and courage (82.8 → 84.5 → 81.8 → 87.5); the *Annunciation* bar is the highest in three of four virtue cells. On GPT-5.4 (bottom row), the four bars are essentially indistinguishable across all virtues. n=750 per cell.](results/four_arm/four_arm_comparison.png)
+![**Figure 2.** Per-arm accuracy across all four conditions, both models, four cardinal virtues. Error bars are 95% bootstrap CIs. On Opus 4.6 (top row), the four-arm gradient is visible especially on temperance (85.2 → 86.7 → 88.8 → 94.7) and courage (82.8 → 84.5 → 81.8 → 87.5); the *Annunciation* bar is the highest in three of four virtue cells. On GPT-5.4 (bottom row), the four bars are essentially indistinguishable across all virtues. 750 calls per cell; valid-n 727–750.](results/four_arm/four_arm_comparison.png)
 
-The structure of the Opus 4.6 result is the heart of the paper:
+The Δ values cited in the bullets below come from paired permutation tests on common (base_id, run_index) keys, so they may differ slightly from naive subtraction of the Table 1 point estimates when per-arm dropout differs (most visibly on courage, where the paired Annunciation-vs-baseline Δ is +3.2 pp while subtracting Table 1 point estimates gives +4.7 pp). The structure of the Opus 4.6 result is the heart of the paper:
 
 - The **content-free control fails to reach Bonferroni significance on any virtue** (largest Δ = +1.5 pp on temperance, p = 0.15 raw). Bare image presence does not move the needle.
 - **Hokusai reaches significance on prudence (+2.7) and temperance (+3.6)** but not on courage or justice.
